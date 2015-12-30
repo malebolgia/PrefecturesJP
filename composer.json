@@ -1,0 +1,23 @@
+{
+    "name": "petfinder/prefectures",
+    "description": "",
+    "keywords": ["framework", "laravel", "lavalite", "Prefectures"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-0": {
+            "Petfinder\\Prefectures\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
