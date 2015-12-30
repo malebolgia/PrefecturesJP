@@ -2,12 +2,8 @@
 <table id="main-list" class="table table-striped table-bordered">
     <thead>
         <td>Id</td>
-        <th>{!! trans('prefectures::prefecture.label.id')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.title')!!}</th>
+        <th>{!! trans('prefectures::prefecture.label.title')!!}</th>
             <th>{!! trans('prefectures::prefecture.label.status')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.deleted')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.created_at')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.updated_at')!!}</th>
 
         <td>Action</td>
     </thead>
@@ -15,12 +11,8 @@
         @foreach($prefectures as $prefecture)
         <tr>
             <td><a href="/user/prefectures/prefecture/{{ $prefecture->eid }}"> {{ $prefecture->id }} </a></td>
-            <td>{{ $prefecture->id }}</td>
             <td>{{ $prefecture->title }}</td>
             <td>{{ $prefecture->status }}</td>
-            <td>{{ $prefecture->deleted }}</td>
-            <td>{{ $prefecture->created_at }}</td>
-            <td>{{ $prefecture->updated_at }}</td>
 
             <td>
                 <a href="/user/prefectures/prefecture/{{ $prefecture->eid }}/edit"> Edit </a>

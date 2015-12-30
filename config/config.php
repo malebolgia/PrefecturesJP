@@ -32,9 +32,9 @@ return [
                         'xl'        => ['width' =>'1000',   'height' =>'750'],
                         ],
 
-                    'fillable'          =>  ['user_id', 'id',            'title',            'status',            'deleted',            'created_at',            'updated_at',],
-                    'listfields'        =>  ['id', 'id',            'title',            'status',            'deleted',            'created_at',            'updated_at',],
-                    'translatable'      =>  ['id',            'title',            'status',            'deleted',            'created_at',            'updated_at',],
+                    'fillable'          =>  ['user_id', 'title',            'status',],
+                    'listfields'        =>  ['id', 'title',            'status',],
+                    'translatable'      =>  ['title',            'status',],
 
                     'upload-folder'     =>  '/uploads/prefectures/prefecture',
                     'uploadable'        =>  [

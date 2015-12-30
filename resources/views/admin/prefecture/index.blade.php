@@ -25,12 +25,8 @@
 @section('content')
 <table id="main-list" class="table table-striped table-bordered">
     <thead>
-        <th>{!! trans('prefectures::prefecture.label.id')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.title')!!}</th>
+        <th>{!! trans('prefectures::prefecture.label.title')!!}</th>
             <th>{!! trans('prefectures::prefecture.label.status')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.deleted')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.created_at')!!}</th>
-            <th>{!! trans('prefectures::prefecture.label.updated_at')!!}</th>
 
     </thead>
 </table>
@@ -44,12 +40,8 @@ $(document).ready(function(){
     oTable = $('#main-list').dataTable( {
         "ajax": '{{ URL::to('/admin/prefectures/prefecture') }}',
         "columns": [
-            {data :'id'},
             {data :'title'},
             {data :'status'},
-            {data :'deleted'},
-            {data :'created_at'},
-            {data :'updated_at'},
 
         ],
         "prefectureLength": 50

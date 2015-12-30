@@ -28,24 +28,16 @@ class PrefectureUserRequest extends Request {
 		// validation rule for create request.
 		if($request->isMethod('POST'))
 			return [
-				'id'          => 'required'
-            'title'          => 'required'
+				'title'          => 'required'
             'status'          => 'required'
-            'deleted'          => 'required'
-            'created_at'          => 'required'
-            'updated_at'          => 'required'
 
 			];
 
 		// Validation rule for update request.
 		if($request->isMethod('PUT') || $request->isMethod('PATCH'))
 			return [
-				'id'          => 'required'
-            'title'          => 'required'
+				'title'          => 'required'
             'status'          => 'required'
-            'deleted'          => 'required'
-            'created_at'          => 'required'
-            'updated_at'          => 'required'
 
 			];
 
